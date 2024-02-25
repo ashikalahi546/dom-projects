@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- card section start -->
+
+    <section class="max-w-6xl m-auto ">
+        <div class="bg-gray-50 p-5 font-medium flex justify-between mb-6">
+            <h1 >Budget: <span id="budget">2500</span> $</h1>
+            <h2 >card: <span id="cart">0</span></h2>
+            <h3 >Left: <span id="left">6</span></h3>
+
+        </div>
+   <div class="flex gap-10 ">
+    <div class="grid grid-cols-2 w-7/12 gap-10">
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center gap-3.5">
+            <h2  class="card-title">Tamim Iqbal</h2>
+            <h3  class="font-medium">Price: <span>400</span> $</h3>
+            <h4  class="font-medium">Category: <span>Bat</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center gap-3.5">
+            <h2 class="card-title">Shakib</h2>
+            <h3 class="font-medium">Price: <span>400</span> $</h3>
+            <h4 class="font-medium">Category: <span>All-Rounder</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center gap-3.5">
+            <h2 class="card-title">Musfiq</h2>
+            <h3 class="font-medium">Price: <span>300</span> $</h3>
+            <h4 class="font-medium">Category: <span>Bat</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center gap-3.5">
+            <h2 class="card-title">Mehedi</h2>
+            <h3 class="font-medium">Price: <span>300</span> $</h3>
+            <h4 class="font-medium">Category: <span>All-Rounder</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center gap-3.5">
+            <h2 class="card-title">Towhid</h2>
+            <h3 class="font-medium">Price: <span>300</span> $</h3>
+            <h4 class="font-medium">Category: <span>Bat</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center gap-3.5">
+            <h2 class="card-title">Shanto</h2>
+            <h3 class="font-medium">Price: <span>300</span> $</h3>
+            <h4 class="font-medium">Category: <span>Bat</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center  gap-3.5">
+            <h2 class="card-title">Taskin</h2>
+            <h3 class="font-medium">Price: <span>400</span> $</h3>
+            <h4 class="font-medium">Category: <span>Ball</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body flex flex-col items-center gap-3.5">
+            <h2 class="card-title">Mustafizur</h2>
+            <h3 class="font-medium">Price: <span>300</span> $</h3>
+            <h4 class="font-medium">Category: <span>Ball</span></h4>
+            <button class="add-btn  btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-5/12 flex flex-col gap-4 shadow-xl p-8  rounded-lg">
+        <h3 class="text-center text-2xl font-semibold">My Cart</h3>
+        <hr />
+        <div class="flex justify-between font-medium">
+          <h1>Name</h1>
+          <h2>Price</h2>
+          <h1>Category</h1>
+        </div>
+        <div id="player-section">
+
+        </div>
+        <hr />
+        <h2 class="text-center text-xl font-medium">
+          Total Cost: <span id="total-cost">0</span> $
+        </h2>
+        <hr />
+        <div class="flex items-center justify-center gap-4">
+          <input id="coupon-code"
+            class="outline-none border p-2.5 rounded-lg"
+            type="text"
+            placeholder="Coupon Code"
+          />
+          <button onclick="grandTotal('apply-btn')" class="btn">Apply</button>
+        </div>
+        <hr />
+        <h2 class="text-center text-xl font-medium">
+          Grand Total <span id="grand-total">0</span> $
+        </h2>
+      </div>
+   </div>
+    </section>
+    <!-- card section  end-->
+
+    <script src="index.js"></script>
+  </body>
+</html>
